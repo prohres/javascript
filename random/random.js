@@ -9,16 +9,13 @@
  ****
   */
 
-function shuffleArrays(names) {
-	
-    var names = String(prompt('Please enter the names separated by commas:'));
-    var arrayNames = names.split(', ');
+function shuffleArrays(names = [""]) {
 
 	var newArrayNames = [];
-	newArrayNames = arrayNames.sort(function(){return 0.5 - Math.random()});	
-	console.log(newArrayNames);
+
+	newArrayNames = names.sort(function(){return 0.5 - Math.random()});	
+	
 	return newArrayNames;
 }
-shuffleArrays();
+// ["Андрій", "Марія", "Василь", "Петро","Джон", "Микола", "Ігор", "Леся"]
 
-// Андрій, Марія, Василь, Петро, Микола, Євген, Ігор

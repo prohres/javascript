@@ -9,26 +9,20 @@
  ****
   */	
 
-function countOddEvenNumbers(n) {
-	do
-	{
-    	var n = Number(prompt('Please give me an positive number:'));
-	}
-	while (n < 0);     
+function countOddEvenNumbers(n = 1) {
 	
 	var result = {odd: 0, even: 0};
 
-	var sn = n.toString();
-
-	for (var i = 0; i < sn.length; i++) {
-		if (sn[i] % 2 === 0) {
-			result.even++;
+	var nStr = n.toString();
+	for (var i = 0; i < nStr.length; i++) {
+		var x = parseInt(nStr[i]);
+		if ((x % 2) === 0) {
+			result["even"] += 1;
 		}
 		else {
-			result.odd++;
-		}
+			result["odd"] += 1;
+		}  
 	}
-	console.log(result);
 	return result;
 }
-countOddEvenNumbers();
+
