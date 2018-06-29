@@ -9,7 +9,10 @@
  ****
   */	
 
-function countOddEvenNumbers(n = 1) {
+function countOddEvenNumbers(n) {
+	if (typeof n !== 'number') {
+		return result = {odd: 0, even: 0};
+	}
 	
 	var result = {odd: 0, even: 0};
 

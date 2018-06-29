@@ -9,7 +9,10 @@
  ****
   */
 
-function shuffleArrays(names = [""]) {
+function shuffleArrays(names) {
+	if (typeof names !== 'object') {
+		return newArrayNames = [];
+	}
 
 	var newArrayNames = [];
 

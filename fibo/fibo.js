@@ -9,8 +9,11 @@
  ****
   */	
 
-function generateFibonacciSequence(n = 1) {
-	
+function generateFibonacciSequence(n) {
+	if (typeof n !== 'number') {
+		return fibo = [];
+	}
+
 	var fibo = [1, 1];
 	
 	switch(n) {
