@@ -18,8 +18,7 @@ function countOddEvenNumbers(n) {
 
 	var nStr = n.toString();
 	for (var i = 0; i < nStr.length; i++) {
-		var x = parseInt(nStr[i]);
-		if ((x % 2) === 0) {
+		if (parseInt(nStr[i]) % 2 === 0) {
 			result["even"] += 1;
 		}
 		else {
