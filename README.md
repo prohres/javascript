@@ -1,2 +1,2 @@
-# tasks
-JS lerning
+# Tasks
+The task for training JavaScript
